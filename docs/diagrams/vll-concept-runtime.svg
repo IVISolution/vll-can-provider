@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="330" fill="#ffffff"/>
+
+  <!-- CAN bus -->
+  <rect x="20" y="140" width="160" height="60" rx="8" fill="#fdf6e3" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="100" y="176" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">CAN bus</text>
+  <line x1="184" y1="170" x2="236" y2="170" stroke="#666" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+
+  <!-- Provider with example rules -->
+  <rect x="240" y="20" width="440" height="290" rx="12" fill="#fdf0f4" stroke="#d6457a" stroke-width="1.5"/>
+  <text x="262" y="50" font-size="17" font-weight="bold" fill="#c2336a">VLL CAN Provider</text>
+
+  <g font-family="monospace" font-size="14">
+    <rect x="260" y="68" width="400" height="48" rx="6" fill="#ffffff" stroke="#e3c4d0"/>
+    <text x="278" y="97"><tspan fill="#b07d00">wheels</tspan><tspan fill="#555"> → </tspan><tspan fill="#5b4bc4">Speed</tspan><tspan fill="#555"> → </tspan><tspan fill="#5b4bc4">IsMoving</tspan></text>
+
+    <rect x="260" y="126" width="400" height="48" rx="6" fill="#ffffff" stroke="#e3c4d0"/>
+    <text x="278" y="155"><tspan fill="#b07d00">gear</tspan><tspan fill="#555">   → </tspan><tspan fill="#5b4bc4">SelectedGear</tspan></text>
+
+    <rect x="260" y="184" width="400" height="48" rx="6" fill="#ffffff" stroke="#e3c4d0"/>
+    <text x="278" y="213"><tspan fill="#b07d00">brake</tspan><tspan fill="#555">  → </tspan><tspan fill="#5b4bc4">EBA.IsEngaged</tspan></text>
+
+    <rect x="260" y="242" width="400" height="48" rx="6" fill="#ffffff" stroke="#e3c4d0"/>
+    <text x="278" y="271"><tspan fill="#b07d00">TempSet</tspan><tspan fill="#555"> ← </tspan><tspan fill="#5b4bc4">HVAC target temperature</tspan></text>
+  </g>
+
+  <!-- Databroker and apps -->
+  <line x1="684" y1="170" x2="756" y2="170" stroke="#666" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <rect x="760" y="140" width="210" height="60" rx="8" fill="#f1effc" stroke="#7a6ad8" stroke-width="1.5"/>
+  <text x="865" y="168" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">KUKSA</text>
+  <text x="865" y="188" text-anchor="middle" font-size="12.5" fill="#5b4bc4" font-family="monospace">Databroker</text>
+  <line x1="865" y1="136" x2="865" y2="94" stroke="#666" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <rect x="780" y="40" width="170" height="50" rx="8" fill="#f5f6f8" stroke="#555" stroke-width="1.5"/>
+  <text x="865" y="71" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">Apps</text>
+</svg>
