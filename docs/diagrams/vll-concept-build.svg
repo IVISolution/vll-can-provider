@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="290" fill="#ffffff"/>
+
+  <!-- Inputs -->
+  <rect x="20" y="30" width="200" height="50" rx="8" fill="#f1effc" stroke="#7a6ad8" stroke-width="1.5"/>
+  <text x="120" y="61" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">VSS standard</text>
+  <rect x="20" y="105" width="200" height="50" rx="8" fill="#fdf0f4" stroke="#d6457a" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="120" y="136" text-anchor="middle" font-size="15" font-weight="bold" fill="#b8325f" font-family="monospace">VLL overlay</text>
+  <rect x="20" y="180" width="200" height="50" rx="8" fill="#fdf6e3" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="120" y="211" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">DBC file</text>
+
+  <polyline points="220,55 255,55 255,130" fill="none" stroke="#666" stroke-width="1.5"/>
+  <polyline points="220,205 255,205 255,130" fill="none" stroke="#666" stroke-width="1.5"/>
+  <line x1="220" y1="130" x2="296" y2="130" stroke="#666" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Code generator -->
+  <rect x="300" y="85" width="210" height="90" rx="10" fill="#f5f6f8" stroke="#555" stroke-width="1.5"/>
+  <text x="405" y="137" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Code generator</text>
+
+  <line x1="510" y1="130" x2="566" y2="130" stroke="#666" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- C++ code -->
+  <rect x="570" y="90" width="160" height="80" rx="10" fill="#ffffff" stroke="#999" stroke-width="1.5"/>
+  <text x="650" y="137" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a" font-family="monospace">C++ code</text>
+
+  <line x1="730" y1="130" x2="796" y2="130" stroke="#666" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="763" y="152" text-anchor="middle" font-size="12.5" fill="#666" font-family="monospace">build</text>
+
+  <!-- Provider -->
+  <rect x="800" y="85" width="180" height="90" rx="10" fill="#e0457b"/>
+  <text x="890" y="125" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">VLL CAN</text>
+  <text x="890" y="148" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">Provider</text>
+  <!-- Merged VSS for the Databroker -->
+  <polyline points="405,175 405,245 566,245" fill="none" stroke="#666" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="570" y="220" width="160" height="50" rx="10" fill="#f1effc" stroke="#7a6ad8" stroke-width="1.5"/>
+  <text x="650" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Merged VSS (JSON)</text>
+  <line x1="730" y1="245" x2="796" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="800" y="220" width="180" height="50" rx="10" fill="#f5f6f8" stroke="#555" stroke-width="1.5"/>
+  <text x="890" y="250" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">KUKSA Databroker</text>
+</svg>
